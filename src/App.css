@@ -1,0 +1,82 @@
+/* App.css */
+
+/* Estilos generales */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b0027; /* Color de fondo general */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Estilos para el Navbar */
+.custom-navbar {
+  background-color: #240021; /* Color de fondo del Navbar */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff !important; /* Color de texto del Navbar */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #f0f0f0 !important; /* Color de texto al pasar el mouse */
+}
+
+/* Estilos para el encabezado */
+.App-header {
+  background-color: #2c0026; /* Color de fondo del encabezado */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  color: #240021; /* Color del título */
+}
+
+.App-header p {
+  color: #f7f1f1; /* Color del párrafo */
+}
+
+/* Estilos para el Carrusel */
+.carousel-item {
+  text-align: center; /* Centrar texto en el carrusel */
+}
+
+.carousel-caption h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.carousel-caption p {
+  color: #ffffff;
+}
+
+/* Estilos para el Acordeón */
+.accordion-container {
+  background-color: #1d0035; /* Color de fondo del acordeón */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(128, 4, 211, 0.1);
+}
+
+.accordion-header {
+  cursor: pointer; /* Cambiar cursor al pasar sobre el encabezado */
+}
+
+/* Estilos para el Footer */
+.App-footer {
+  background-color: #280038; /* Color de fondo del Footer */
+  color: #ffffff; /* Color de texto del Footer */
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.App-footer p {
+  margin: 5px 0;
+}
