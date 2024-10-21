@@ -1,0 +1,77 @@
+/* Products.css */
+
+.products-container {
+    padding: 20px;
+    background-color: #610349; /* Color de fondo del contenedor */
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    width: calc(33.333% - 20px);
+    transition: transform 0.2s;
+    background-color: #ffffff; /* Color de fondo de cada tarjeta */
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.product-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Color de texto más oscuro */
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #630070; /* Color azul */
+    margin-bottom: 10px;
+}
+
+.product-description {
+    margin: 10px 0;
+    color: #070606; /* Color de texto más suave */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-button {
+    padding: 10px;
+    background-color: #aa00c0; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #37013f; /* Color más oscuro para el hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px); /* Dos columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}

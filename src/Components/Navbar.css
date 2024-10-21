@@ -1,0 +1,36 @@
+/* navbar.css */
+
+.navbar {
+    display: flex; /* Asegura que los elementos de la navbar estén en fila */
+    justify-content: space-around; /* Distribuir el espacio uniformemente */
+    width: 100%;
+    background-color: #240021; /* Color de fondo de la navbar */
+    padding: 10px 0; /* Espaciado vertical en la navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  }
+  
+  .navbar .nav-link {
+    color: #ffffff; /* Color del texto de los enlaces */
+    font-weight: bold; /* Hacer el texto más prominente */
+    transition: color 0.3s; /* Transición suave para el hover */
+    padding: 10px 15px; /* Espaciado alrededor de los enlaces */
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ffcc00; /* Color del texto en hover */
+    background-color: rgba(255, 204, 0, 0.2); /* Fondo suave al hacer hover */
+    border-radius: 5px; /* Bordes redondeados al hacer hover */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      align-items: center; /* Centrar los enlaces */
+    }
+  
+    .navbar .nav-link {
+      margin: 5px 0; /* Espaciado vertical entre enlaces */
+    }
+  }
+  

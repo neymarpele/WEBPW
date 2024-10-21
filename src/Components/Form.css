@@ -1,0 +1,79 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 106%;
+  padding: 23px; /* Añadir un poco de espacio alrededor */
+}
+
+/* Estilo del logo */
+.logo {
+  width: 104px; /* Tamaño ajustable */
+  margin-bottom: 19px;
+}
+
+/* Estilo del formulario */
+.form {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para una mejor visualización */
+  width: 400px; /* Ancho ajustado */
+  padding: 20px;
+  border: 5px solid #000000;
+  border-radius: 14px; /* Bordes más redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  margin: 21px auto;
+  background-color: #8a009c; /* Fondo blanco para el formulario */
+}
+
+/* Estilo de los inputs */
+.input {
+  margin: 14px 0; /* Espaciado vertical */
+  padding: 14px; /* Más espacio dentro de los inputs */
+  border-radius: 7px;
+  border: 2px solid #000000;
+  font-size: 19px;
+  transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+/* Efecto al enfocar un input */
+.input:focus {
+  border-color: #22001f; /* Color azul al enfocar */
+  outline: none; /* Eliminar el contorno por defecto */
+}
+
+/* Estilo del botón */
+.button {
+  padding: 12px; /* Espacio adicional para el botón */
+  border: none;
+  border-radius: 5px;
+  background-color: #1f041f; /* Color de fondo azul */
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones para el fondo y la escala */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.button:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Ligeramente agrandar el botón */
+}
+
+/* Estilo del footer */
+.footer {
+  text-align: center;
+  padding: 23px;
+  margin-top: 25px;
+  background-color: #641954; /* Color de fondo claro */
+  width: 103%;
+  border-top: 3px solid #000000; /* Línea superior para el footer */
+  position: relative; /* Posición relativa para el footer */
+}
+
+/* Estilo del texto en el footer */
+.footer p {
+  margin: 0; /* Eliminar margen por defecto */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  color: #ffffff; /* Color de texto gris oscuro */
+}

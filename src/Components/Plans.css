@@ -1,0 +1,83 @@
+/* Plans.css */
+
+.plans-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+.plans-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan-card {
+    border: none; /* Sin borde */
+    padding: 20px; /* Padding adicional para mayor espacio */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    width: calc(33.333% - 20px);
+    background-color: #ffffff; /* Color de fondo de cada tarjeta */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transiciones más suaves */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
+    text-align: center; /* Centrar texto */
+}
+
+.plan-card:hover {
+    transform: translateY(-5px); /* Mover hacia arriba en el hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+
+.plan-image {
+    max-width: 100%; /* Asegura que la imagen no desborde */
+    height: auto; /* Mantener proporciones */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.plan-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Color del título */
+}
+
+.plan-price {
+    font-size: 1.2em;
+    color: #007bff; /* Color del precio */
+    margin-bottom: 10px;
+}
+
+.plan-description {
+    margin: 10px 0;
+    color: #555; /* Color de la descripción */
+}
+
+.plan-button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em; /* Tamaño de fuente del botón */
+}
+
+.plan-button:hover {
+    background-color: #218838; /* Color más oscuro para el hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plan-card {
+        width: calc(50% - 20px); /* Dos columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .plan-card {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}

@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 110vh; /* Cambia a min-height para permitir contenido más largo */
+  background-color: #3e084e;
+  padding: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 105%;
+  background-color: #240021;
+  padding: 18px; /* Aumentar tamaño del nav */
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+  font-size: 1.1rem; /* Tamaño de letra más grande */
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  color: #240021;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 10px; /* Espaciado entre botones */
+}
+
+.button:hover {
+  background-color: #e0b800;
+  transform: scale(1.05);
+}
+
+.info-section {
+  padding: 25px;
+  text-align: center;
+  background-color: #630763;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+.info-section h2 {
+  font-size: 3rem;
+  color: #240021;
+}
+
+.info-section h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.info-section p {
+  font-size: 1.8rem;
+  color: #666;
+}
+
+.info-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-section ul li {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Estilos del carrusel */
+.carousel-item {
+  transition: transform 0.5s ease;
+}
+
+.footer-info {
+  padding: 10px;
+  font-size: 0.9rem; /* Tamaño de fuente para el pie de página */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Centrar texto en el pie de página */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.footer-info a {
+  color: #240021; /* Color del enlace */
+  margin: 0 5px; /* Espaciado entre enlaces */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+.footer-info a:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
